@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+    <section class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__texts">
+                    <p class="main__address">— Стоматология в Чебоксарах</p>
+                    <h1 class="main__title">Лечение зубов <br> в тот же день</h1>
+                    <p class="main__text">Мы проведем полную консультацию, <br> профессиональную гигиену полости рта, <br>
+                        лечение зубов и десен</p>
+                        <button class="main__btn">Записаться на приём</button>
+                </div>
+                <div class="main__blocks">
+                    <div class="first__block">
+                        <img class="first__img" src={% static "myapp/img/Tilda_Icons_20med_doctor.svg" %} >
+                        <p>Команда квалифицированных <br> специалистов </p>
+                    </div>
+                    <div class="second__block">
+                        <img class="second__img" src={% static "myapp/img/stul.svg" %} >
+                        <p>3 стоматологических <br> кабинета </p>
+                    </div>
+                    <div class="third__block">
+                        <img  class="third__img" src={% static "myapp/img/gps.svg" %} >
+                        <p>Удобное <br> расположение </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="cards__wrap">
+                <div class="cards__texts">
+                    <h1 class="cards__title">Услуги</h1>
+                    <p class="cards__text">Мы постарались сделать прайс, <br>
+                        максимально простым и понятным. </p>
+                </div>
+                <div class="cards__blocks">
+                    <div class="dental__block">
+                        <img class="card__dental-img" src={% static "myapp/img/hygiene.svg" %} >
+                        <p class="card__dental-text">Лечение зубов</p>
+                    </div>
+                        <img  class="strelka__dental" src={% static "myapp/img/strelka.svg" %}>
+                     <div class="hygiene__block">
+                        <img class="cards__block-img" src={% static "myapp/img/hygiene.svg" %}>
+                        <p class="cards__block-text">Гигиена</p>
+                    </div>
+                    <div class="brekets__block">
+                        <img class="cards__block-img src={% static "myapp/img/brekets.svg" %}">
+                        <p class="cards__block-text">Брекеты</p>
+                    </div>
+                    <div class="kids__block">
+                        <img class="cards__block-img" src={% static "myapp/img/kids.svg" %} >
+                        <p class="cards__block-text">Детская Стоматология</p>
+                    </div>
+                    <div class="implants__block">
+                        <img class="cards__block-img" src={% static "myapp/img/implants.svg" %} >
+                        <p class="cards__block-text">Импланты</p>
+                    </div>
+                    <div class="vinirs__block">
+                        <img class="cards__block-img" src={% static "myapp/img/vinirs.svg" %}>
+                        <p class="cards__block-text">Виниры</p>
+                    </div>
+                    <div class="koronki__block">
+                        <img class="cards__block-img" src={% static "myapp/img/koronki.svg" %}>
+                        <p class="cards__block-text">Коронки</p>
+                    </div>
+                    <div class="xirurgia__block">
+                        <img class="cards__block-img" src={% static "myapp/img/xirurgia.svg" %}>
+                        <p class="cards__block-text">Хирургия</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ques">
+        <div class="container">
+            <div class="ques__wrap">
+                <div class="ques__title">
+                    <h1 class="ques__title">Нам доверяют пациенты</h1>
+                </div>
+                <div class="ques__cards">
+                    <div class="first__card">
+                        <p class="card__num">1</p>
+                        <h1 class="card__title">Честные цены, без хитрых уловок</h1>
+                        <p class="card__text">Фиксируем цены в плане лечения, <br> не повышаем в процессе.</p>
+                    </div>
+                    <div class="second__card">
+                        <p class="card__num">2</p>
+                        <h1 class="card__title">Опытные Врачи</h1>
+                        <p class="card__text">Врачи постоянно совершенствуются <br>в своей специальности, несмотря <br>на богатый опыт работы.</p>
+                    </div>
+                    <div class="third__card">
+                        <p class="card__num">3</p>
+                        <h1 class="card__title">Комфортные условия</h1>
+                        <p class="card__text">Уютная обстановка и отзывчивый <br> персонал сделают поход к стоматологу <br> максимально приятным.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="record">
+        <div class="container">
+            <div class="record__wrap">
+                <div class="record__texts">
+                    <h1 class="record__title">При фиксации брекетов на обе челюсти <br> получи сертификат на 7000 рублей</h1>
+                    <p class="record__text">Укажите вой номер телефона, мы перезвоним <br> и подберем для вас удобное время приёма. <br>
+                        Или позвоните нам сами — +7 900 333 10 40 </p>
+                        <div class="record__btns">
+                            <input class="record__phone" type="tel" placeholder="Телефон">
+                            <button class="record__btn">Записаться на прием</button>
+                        </div>
+                    <p class="cookies">Записываясь на услугу вы даёте согласие на <br> <a href="#">обработку своих персональных данных</a></p>
+                </div>
+                <img class="record__img" src={% static "myapp/img/record.png" %} >
+            </div>
+        </div>
+    </section>
+
+    <section class="end">
+        <div class="container">
+            <div class="end__wrap">
+                <div class="end__texts">
+                    <h1 class="end__title">Онлайн консультация специалиста <br> по аудио и видео связи, Бесплатно.2</h1>
+                    <p class="end__text">Укажите вой номер телефона, мы перезвоним <br> и подберем для вас удобное время для консультации. <br>
+                        Или позвоните нам сами —  <a href="#">+7 900 333 10 40 </a>
+                        <div class="end__btns">
+                            <input class="end__phone" type="tel" placeholder="Телефон">
+                            <button class="end__btn">Записаться на прием</button>
+                        </div>
+                    <p class="cookies">Записываясь на услугу вы даёте согласие на <br> <a href="#">обработку своих персональных данных</a></p>
+                </div>
+                <img  class="end__img" src={% static "myapp/img/endwomen" %}>
+            </div>
+        </div>
+    </section>
+{% endblock %}
